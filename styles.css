@@ -14,3 +14,10 @@ body {
     background-color: darkblue;
     text-align: center;
    }
+
+   #container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
