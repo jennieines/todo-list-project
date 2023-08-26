@@ -49,3 +49,10 @@ body {
     margin: 20px auto;
 }
 
+#todo-list {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
