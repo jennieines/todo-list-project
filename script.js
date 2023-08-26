@@ -15,3 +15,12 @@ window.addEventListener('load', function () { //This code adds an event listener
   });
 
   
+form.addEventListener('submit', function(event) { // This event listener captures the submission of a form.
+    event.preventDefault(); // Prevent page reload.
+  
+    var task = input.value; // Get the value of the input field where the task is entered.
+    input.value = ''; // Clear the input field after getting the task value.
+  
+    addTaskToList(task); // Gets the 'addTaskToList' function to add the task to a list on the page.
+    localStorage.setItem(task, task); // Stores the task into local storage even after the page reloads.
+  });
