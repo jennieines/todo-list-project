@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My To Do List</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>My To Do List</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div id=”container”></div>
-</div>
-<div id=”task-creator”>  
-    <h1> Add a Task</h1>
-    <form id="my-form">
-        <input id="todo-form" type="text" placeholder="Type first item here">
-        <input id="todo-input" type="text" placeholder="Type second item here">
-        <button type="submit">Add Task</button>
-      </form>
+    <div id="container">
+        <div id="task-creator">  
+            <h1> Add a Task</h1>
+            <form id="my-form">
+                <input id="todo-form" type="text" placeholder="Type first item here">
+                <input id="todo-input" type="text" placeholder="Type second item here">
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+        <div id="task-list">
+            <h1> Your Tasks</h1>
+            <ul id="todo-list">
+                <li>Project</li>
+                <li>Exercises</li>
+                <li>Classes</li>
+            </ul>
+        </div>
     </div>
-<div id=”task-list”></div>
-<h1> Your Tasks</h1>
-<ul id="todo-list">
-    <li>Project</li>
-    <li>Exercises</li>
-    <li>Classes</li>
-  </ul>
-</div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>    
 </html>

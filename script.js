@@ -24,3 +24,16 @@ form.addEventListener('submit', function(event) { // This event listener capture
     addTaskToList(task); // Gets the 'addTaskToList' function to add the task to a list on the page.
     localStorage.setItem(task, task); // Stores the task into local storage even after the page reloads.
   });
+
+  function addTaskToList(task) {
+    var listItem = document.createElement('li');
+    listItem.textContent = task;
+  
+    listItem.addEventListener('click', function() {
+      listItem.remove();
+      localStorage.removeItem(task);
+    });
+  
+    list.appendChild(listItem);
+  }
+  
